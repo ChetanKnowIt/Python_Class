@@ -1,0 +1,228 @@
+Python 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> def f(a=1,b):
+	
+SyntaxError: non-default argument follows default argument
+>>> def f(a=1,b=1):
+	print(1)
+
+	
+>>> f()
+1
+>>> def f(a=1,b=1, c):
+	print(1)
+	
+SyntaxError: non-default argument follows default argument
+>>> dict1 = {"a":1, "b":2, "c":3}
+>>> print(len(dict1))
+3
+>>> print(dict1.get("b"))
+2
+>>> dict["a"] =5
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    dict["a"] =5
+TypeError: 'type' object does not support item assignment
+>>> dict1["a"] =5
+>>> boxes = {}
+>>> jars = {}
+>>> crates = {}
+>>> boxes['cereal'] = 1
+>>> boxes['candy'] = 1
+>>> jars['honey'] 4
+SyntaxError: invalid syntax
+>>> jars['honey']= 4
+>>> crates['boxes'] = boxes
+>>> crates['jars'] = jars
+>>> print(len(crates[boxes]))
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    print(len(crates[boxes]))
+TypeError: unhashable type: 'dict'
+>>> dict1 = {"a":10, "b":2, "c":3}
+>>> str1=""
+>>> for i in dict1:
+	str1=str1+str(dict[i])+""
+	str2=str1[:1]
+print(str2[::-1])
+SyntaxError: invalid syntax
+>>> for i in dict1:
+	str1=str1+str(dict[i])+""
+	str2=str1[:1]
+    print(str2[::-1])
+    
+SyntaxError: unindent does not match any outer indentation level
+>>> for i in dict1:
+	str1=str1+str(dict[i])+""
+	str2=str1[:1]
+	
+    print(str2[::-1])
+    
+SyntaxError: unindent does not match any outer indentation level
+>>> for i in dict1:
+	str1=str1+str(dict[i])+""
+	str2=str1[:1]
+
+print(str2[::-1])
+SyntaxError: invalid syntax
+>>> for i in dict1:
+	str1=str1+str(dict[i])+""
+	str2=str1[:1]
+
+	
+>>> print(str2[::-1])
+d
+>>> str2
+'d'
+>>> str1
+"dict['a']dict['b']dict['c']"
+>>> print(str2[::0])
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    print(str2[::0])
+ValueError: slice step cannot be zero
+>>> for i in dict1:
+	str1=str1+str(dict[i])+""
+	str2=str1[:-1]
+
+	
+>>> print(str2[::-1])
+'c'[tcid]'b'[tcid]'a'[tcid]'c'[tcid]'b'[tcid]'a'[tcid
+>>> l1 = [1,2,3]
+>>> l1
+[1, 2, 3]
+>>> l2 = ['a123','b123','c123']
+>>> l2[2][0]
+'c'
+>>> l1[:]
+[1, 2, 3]
+>>> l1[0:]
+[1, 2, 3]
+>>> l1[0:100]
+[1, 2, 3]
+>>> l1[:100]
+[1, 2, 3]
+>>> l1[-1:]
+[3]
+>>> d = lambda p:p*2
+>>> t = lambda p:p*3
+>>> x = 2
+>>> x = d(x)
+>>> x = t(X)
+Traceback (most recent call last):
+  File "<pyshell#53>", line 1, in <module>
+    x = t(X)
+NameError: name 'X' is not defined
+>>> x = t(x)
+>>> x = d(x)
+>>> print(x)
+24
+>>> values = [2,3,2,4]
+>>> def my_t(num):
+	return num**2
+
+>>> for i in map(my_t,values):
+	print(i, end='')
+
+	
+49416
+>>> l2
+['a123', 'b123', 'c123']
+>>> ls[-1][-1]
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    ls[-1][-1]
+NameError: name 'ls' is not defined
+>>> l2[-1][-1]
+'3'
+>>> l2 = ['a123a', 'b123b', 'c123c']
+>>> l2[-1][-1]
+'c'
+>>> def power(x,y=2):
+	r = 1
+	for i in range(y):
+		r=r*x
+	return r
+
+>>> print(power(3))
+9
+>>> print(power(3,3))
+27
+>>> dic = {"l":"w",
+       "t":"w",
+       "c":"d",
+       "d":"d"}
+>>> del dic["t"]
+>>> dic
+{'l': 'w', 'c': 'd', 'd': 'd'}
+>>> name = "snow storm"
+>>> print(name[6:8])
+to
+>>> def main():
+	dic["y"] = "t"
+
+	
+>>> print(main())
+None
+>>> def main():
+	dic["y"] = "t"
+	len(dic)
+
+	
+>>> print(main())
+None
+>>> def main():
+	dic["y"] = "t"
+	return len(dic)
+
+>>> print(main())
+4
+>>> names = ["r", "r","r", "i","n"]
+>>> print("".join(names))
+rrrin
+>>> True=False
+SyntaxError: cannot assign to True
+>>> True=False
+SyntaxError: cannot assign to True
+>>> 2*3**2
+18
+>>> a=[1,2,3,4]
+>>> b=[sum(a[0:x+1] for x in range(0,len(a))]
+   
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+>>> b=[sum(a[0:x+1]) for x in range(0,len(a))]
+>>> print(b)
+[1, 3, 6, 10]
+>>> names1=['k','r','v','k']
+>>> loc=names1.index('e')
+Traceback (most recent call last):
+  File "<pyshell#106>", line 1, in <module>
+    loc=names1.index('e')
+ValueError: 'e' is not in list
+>>> print(loc)
+Traceback (most recent call last):
+  File "<pyshell#107>", line 1, in <module>
+    print(loc)
+NameError: name 'loc' is not defined
+>>> boxes ={}
+>>> jars ={
+	}
+>>> crates = {}
+>>> boxes['cereal'] =1
+>>> boxes['candy']=2
+>>> jars['honey']=3
+>>> crates['boxes']=boxes
+>>> crates['jars']=jars
+>>> print(len(crates[boxes]))
+Traceback (most recent call last):
+  File "<pyshell#117>", line 1, in <module>
+    print(len(crates[boxes]))
+TypeError: unhashable type: 'dict'
+>>> for i in dict1:
+	str1=str1+str(dict1[i])+""
+	str2=str1[:-1]
+
+	
+>>> print(str2[::-1])
+201]'c'[tcid]'b'[tcid]'a'[tcid]'c'[tcid]'b'[tcid]'a'[tcid
+>>> 
