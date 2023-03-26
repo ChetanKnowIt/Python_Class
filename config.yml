@@ -1,0 +1,2 @@
+# Hide the directory listing and redirect to the README.md file
+directory_index: false
